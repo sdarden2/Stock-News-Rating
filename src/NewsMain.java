@@ -5,19 +5,20 @@ import com.ibm.watson.developer_cloud.alchemy.v1.model.Entities;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.TypedRelations;
 
 import java.util.Scanner;
+import java.util.*;
 public class NewsMain {
 
 		
 		public static void main(String [] args) throws IOException
 		{
-			String CRED_NAME = "";
-			String CRED_KEY = "";
+			String API_NAME = "";
+			String API_KEY = "";
 			try
 			{
 				FileReader creds = new FileReader("credentials.txt");
 				BufferedReader br = new BufferedReader(creds);
-				CRED_NAME = br.readLine().trim();
-				CRED_KEY = br.readLine().trim();
+				API_NAME = br.readLine().trim();
+				API_KEY = br.readLine().trim();
 			}			
 			catch (FileNotFoundException e1)
 			{
@@ -31,11 +32,21 @@ public class NewsMain {
 			{
 				ErrorHandle.handle("could not read lines from file (file should have 2 lines)",e3,ErrorType.FATAL);
 			}
-			
-			System.out.printf("CRED NAME: %s\n",CRED_NAME);
-			System.out.printf("CRED KEY: %s\n",CRED_KEY);
+	
 			
 			AlchemyLanguage service = new AlchemyLanguage();
+			service.setApiKey(API_KEY);
+			
+			Map<String,Object> params = new HashMap<String,Object>();
+			params.put(AlchemyLanguage.TEXT, "The stock CIE (Cobalt International Energy, Inc.) is up 25% today, great news for the company");
+			
+			DocumentSentiment sentiment = service.getSentiment(params).execute();
+			Entities entities = service.getEntities(params).execute();
+			TypedRelations relations = service.getTypedRelations(params).execute();
+			
+			System.out.printf("Sentiment\n\n%s\n",sentiment);
+			System.out.printf("Entities\n\n%s\n",entities);
+			System.out.printf("Typed Relations\n\n%s\n",relations);
 			
 		}
 }
