@@ -25,7 +25,7 @@ public class ErrorHandle {
 			System.out.printf("<Raw error message>: %s",e.getMessage());
 			if (exit_status)
 			{
-				System.exit(0);
+				System.exit(exit_no);
 			}
 		}
 }
