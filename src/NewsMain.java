@@ -1,4 +1,9 @@
 import java.io.*;
+import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
+import com.ibm.watson.developer_cloud.alchemy.v1.model.DocumentSentiment;
+import com.ibm.watson.developer_cloud.alchemy.v1.model.Entities;
+import com.ibm.watson.developer_cloud.alchemy.v1.model.TypedRelations;
+
 import java.util.Scanner;
 public class NewsMain {
 
@@ -29,6 +34,8 @@ public class NewsMain {
 			
 			System.out.printf("CRED NAME: %s\n",CRED_NAME);
 			System.out.printf("CRED KEY: %s\n",CRED_KEY);
+			
+			AlchemyLanguage service = new AlchemyLanguage();
 			
 		}
 }
