@@ -38,7 +38,7 @@ public class NewsMain {
 			service.setApiKey(API_KEY);
 			
 			Map<String,Object> params = new HashMap<String,Object>();
-			params.put(AlchemyLanguage.TEXT, "The stock CIE (Cobalt International Energy, Inc.) is up 25% today, great news for the company");
+			params.put(AlchemyLanguage.URL, "https://en.wikipedia.org/wiki/Apple_Inc.");
 			
 			DocumentSentiment sentiment = service.getSentiment(params).execute();
 			Entities entities = service.getEntities(params).execute();
