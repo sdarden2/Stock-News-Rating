@@ -1,0 +1,198 @@
+{
+  "result": {
+    "docs": [
+      {
+        "id": "MTA3ODA3MzYxOTJ8MTQ3MTUyOTI3OQ",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.0,
+                  "type": "neutral"
+                }
+              },
+              "title": "SunEdison Semiconductor (SEMI) Has Jumped To A 10-Month High After Merger",
+              "url": "http://www.rttnews.com/2684616/sunedison-semiconductor-semi-has-jumped-to-a-10-month-high-after-merger.aspx"
+            }
+          }
+        },
+        "timestamp": 1471529279
+      },
+      {
+        "id": "MTA3NDEyNjgzMjV8MTQ3MTUyODEzMw",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.729424,
+                  "type": "positive"
+                }
+              },
+              "title": "SunEdison Semiconductor (SEMI) Alert: Johnson \u0026 Weaver, LLP Launches an Investigation into the Fairness of Price and Process in Proposed Sale of SunEdison Semiconductor Limited; Are Shareholders Getting a Fair Price?",
+              "url": "http://www.prnewswire.com/news-releases/sunedison-semiconductor-semi-alert-johnson--weaver-llp-launches-an-investigation-into-the-fairness-of-price-and-process-in-proposed-sale-of-sunedison-semiconductor-limited-are-shareholders-getting-a-fair-price-300315381.html"
+            }
+          }
+        },
+        "timestamp": 1471528133
+      },
+      {
+        "id": "MTA2OTI2ODA3NTB8MTQ3MTUyNDI4Ng",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.0,
+                  "type": "neutral"
+                }
+              },
+              "title": "Citi Upgrades SunEdison Semiconductor (SEMI) to Neutral",
+              "url": "http://www.streetinsider.com/Upgrades/Citi+Upgrades+SunEdison+Semiconductor+(SEMI)+to+Neutral/11952835.html"
+            }
+          }
+        },
+        "timestamp": 1471524286
+      },
+      {
+        "id": "MTAzNDI0MDg1NzN8MTQ3MTQ4NDIxMg",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.0,
+                  "type": "neutral"
+                }
+              },
+              "title": "BRIEF-GlobalWafers to buy SunEdison Semiconductor",
+              "url": "http://www.reuters.com/article/idUSFWN1AY0QV"
+            }
+          }
+        },
+        "timestamp": 1471484212
+      },
+      {
+        "id": "MTAzMTYzNTc4ODN8MTQ3MTQ4MzM4Ng",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.550639987,
+                  "type": "positive"
+                }
+              },
+              "title": "GlobalWafers and SunEdison Semiconductor Announce Definitive Agreement",
+              "url": "http://www.streetinsider.com/Press+Releases/GlobalWafers+and+SunEdison+Semiconductor+Announce+Definitive+Agreement/11952136.html"
+            }
+          }
+        },
+        "timestamp": 1471483386
+      },
+      {
+        "id": "MTA4Mjk1Mzg5NDV8MTQ3MTQ3ODQwMA",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": -0.217773005,
+                  "type": "negative"
+                }
+              },
+              "title": "SunEdison Semiconductor Skyrockets on Acquisition News",
+              "url": "http://247wallst.com/technology-3/2016/08/18/sunedison-semiconductor-skyrockets-on-acquisition-news/"
+            }
+          }
+        },
+        "timestamp": 1471478400
+      },
+      {
+        "id": "MTEwODIwNDE2ODR8MTQ3MTQ3ODQwMA",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.0,
+                  "type": "neutral"
+                }
+              },
+              "title": "SunEdison Semiconductor Ltd. Stock Soars 40% -- Here\u0027s Why",
+              "url": "http://www.nasdaq.com/article/sunedison-semiconductor-ltd-stock-soars-40-heres-why-cm667284"
+            }
+          }
+        },
+        "timestamp": 1471478400
+      },
+      {
+        "id": "MTEwMTgzNDg1MDN8MTQ3MTQ3ODQwMA",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.0,
+                  "type": "neutral"
+                }
+              },
+              "title": "SunEdison Semiconductor Ltd. Stock Soars 40% -- Here\u0027s Why | Fox Business",
+              "url": "http://www.foxbusiness.com/markets/2016/08/18/sunedison-semiconductor-ltd-stock-soars-40-here-why.html"
+            }
+          }
+        },
+        "timestamp": 1471478400
+      },
+      {
+        "id": "MTA4ODgxMzQyNzV8MTQ3MTQ3ODQwMA",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": -0.217773005,
+                  "type": "negative"
+                }
+              },
+              "title": "SunEdison Semiconductor Skyrockets on Acquisition News",
+              "url": "http://finance.yahoo.com/m/413e443c-214d-33b0-96b4-f4c9173517d1/sunedison-semiconductor.html?yptr\u003dyahoo"
+            }
+          }
+        },
+        "timestamp": 1471478400
+      },
+      {
+        "id": "MTA1NjgwNTQ2NDF8MTQ3MTQ3ODQwMA",
+        "source": {
+          "enriched": {
+            "url": {
+              "enrichedTitle": {
+                "docSentiment": {
+                  "mixed": "0",
+                  "score": 0.0,
+                  "type": "neutral"
+                }
+              },
+              "title": "GlobalWafers to acquire 100% stake in SunEdison Semiconductor",
+              "url": "http://www.digitimes.com/news/a20160818PD205.html"
+            }
+          }
+        },
+        "timestamp": 1471478400
+      }
+    ],
+    "next": "MTg2MDQwMDMzNDk0NjUwODk5MHxNVEExTmpnd05UUTJOREY4TVRRM01UUTNPRFF3TUF8NDQ4NDQwMDQzODYyMTEzMTQ2NHxNVEF6TVRZek5UYzRPRE44TVRRM01UUTRNek00Tmd8OTQxMDMxOTIwOTAxOTQxODk2OHxNVEF6TkRJME1EZzFOek44TVRRM01UUTROREl4TWc"
+  },
+  "totalTransactions": 348
+}
