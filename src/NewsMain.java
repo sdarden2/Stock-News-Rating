@@ -9,7 +9,8 @@ import java.util.*;
 public class NewsMain {
 
 		
-		public static void main(String [] args) throws IOException
+	
+		public static void main(String [] args)
 		{
 			String API_NAME = "";
 			String API_KEY = "";
@@ -36,7 +37,7 @@ public class NewsMain {
 			
 			AlchemyLanguage service = new AlchemyLanguage();
 			service.setApiKey(API_KEY);
-			
+			/*
 			Map<String,Object> params = new HashMap<String,Object>();
 			params.put(AlchemyLanguage.URL, "https://en.wikipedia.org/wiki/Apple_Inc.");
 			
@@ -47,6 +48,6 @@ public class NewsMain {
 			System.out.printf("Sentiment\n\n%s\n",sentiment);
 			System.out.printf("Entities\n\n%s\n",entities);
 			System.out.printf("Typed Relations\n\n%s\n",relations);
-			
+			*/
 		}
 }
