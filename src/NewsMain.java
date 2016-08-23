@@ -7,6 +7,7 @@ import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyDataNews;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.DocumentsResult;
 import com.ibm.watson.developer_cloud.service.AlchemyService;
 import java.util.StringJoiner;
+import org.apache.commons.csv;
 
 import java.util.Scanner;
 import java.util.*;
