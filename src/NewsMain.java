@@ -1,4 +1,5 @@
 import java.io.*;
+
 import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.DocumentSentiment;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.Entities;
@@ -6,17 +7,21 @@ import com.ibm.watson.developer_cloud.alchemy.v1.model.TypedRelations;
 import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyDataNews;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.DocumentsResult;
 import com.ibm.watson.developer_cloud.service.AlchemyService;
+
 import java.util.StringJoiner;
-import org.apache.commons.csv;
 
-import java.util.Scanner;
+
+
 import java.util.*;
-public class NewsMain {
 
+
+public class NewsMain {
+	
+	
 		/*--Still working on this method... purpose is to make the API call to AlchemyDataNews,
 		 *to parse the json, and return a list of links returned by the API call
 		 */
-		public ArrayList<String> getUrls(AlchemyDataNews service, Company company,long start_time, long end_time)
+		public static ArrayList<String> getUrls(AlchemyDataNews service, Company company,long start_time, long end_time)
 		{
 			/*for test start: 1470960000
 			 * end: 1471534500
@@ -37,7 +42,8 @@ public class NewsMain {
 			
 			
 			DocumentsResult results=  service.getNewsDocuments(params).execute();
-			
+			String jsonResults = results.toString();
+			urls = Tools.getUrlsFromJsonString(jsonResults);
 			return urls;
 		}
 	
@@ -68,6 +74,12 @@ public class NewsMain {
 			
 			AlchemyDataNews service = new AlchemyDataNews();
 			service.setApiKey(API_KEY);
+			
+			ArrayList<String> urls = getUrls(service,new Company("RLJ Entertainment","RLJE"),1470960000,1471534500);
+			for (String s: urls)
+			{
+				System.out.printf("%s\n",s);
+			}
 			/*
 			Map<String,Object> params = new HashMap<String,Object>();
 			
@@ -88,22 +100,6 @@ public class NewsMain {
 			DocumentsResult results=  service.getNewsDocuments(params).execute();
 			
 			*/
-			File file = new File("json.output");
-			try
-			{
-				file.createNewFile();
-				FileWriter fw = new FileWriter(file);
-				BufferedWriter bwriter = new BufferedWriter(fw);
-				String res = results.toString();
-				bwriter.write(res,0,res.length());
-				bwriter.close();
-			} catch (IOException e)
-			{
-				ErrorHandle.handle("Cannot create new file",e,ErrorType.FATAL);
-			}
-			
-			
-			System.out.printf("%s",results);
 			
 			
 			/*
