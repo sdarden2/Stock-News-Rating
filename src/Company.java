@@ -3,7 +3,7 @@ public class Company {
 
 	private String companyName;
 	private String stockSymbol;
-	private ArrayList<Float> newsRatings;
+	private ArrayList<NewsRating> newsRatings;
 	
 	public Company(String name, String symbol)
 	{
@@ -17,7 +17,7 @@ public class Company {
 	public void setSymbol(String symbol){stockSymbol = symbol;}
 	
 	/*Rating will be between 1 and -1*/
-	public void addNewsRating(Float rating)
+	public void addNewsRating(NewsRating rating)
 	{
 		newsRatings.add(rating);
 	}
