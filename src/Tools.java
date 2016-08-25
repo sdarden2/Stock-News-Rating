@@ -12,6 +12,12 @@ public class Tools {
 	{
 	
 		ArrayList<String> urlList = new ArrayList<String>();
+		
+		if (jsonString.length() == 0)
+		{
+			return urlList;
+		}
+		
 		BufferedReader reader = new BufferedReader(new StringReader(jsonString));
 		JsonParser parser = Json.createParser(reader);
 		
